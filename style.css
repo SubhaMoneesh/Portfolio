@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    border: 0px;
+}
+
+nav {
+    background-color: rgb(42, 203, 252);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    font-size: large;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+.logo {
+    background-image: url("M.jpg");
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+}
+
+#logoi {
+    position: fixed;
+    visibility: hidden;
+}
+
+#menubar {
+    position: fixed;
+    background-color: aliceblue;
+    display: flex;
+    visibility: collapse;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.chat {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Preahvihear', sans-serif;
+}
+
+.material-symbols-outlined {
+    padding-right: 10px;
+}
+
+.navi:hover {
+    cursor: pointer;
+    color: wheat;
+    font-size: larger;
+}
+
+body{
+    background-color: rgb(186, 232, 250);
+    font-family: 'Poppins', sans-serif;
+}
+
+.mypic{
+    padding: 20px;
+    display: flex;
+}
+.pic{
+    width: 30%;
+}
+.pic img{
+    width: 100%;
+}
+.info{
+    width: 70%;
+    font-size: 40px;
+}
+
+
+@media only screen and (max-width: 700px) {
+    #menubar div {
+        padding: 10px;
+    }
+
+    #logoi :checked~#menubar {
+        visibility: visible;
+        left: 0px;
+    }
+    nav ul{
+        display: none;
+    }
+    .mypic{
+        flex-direction: column;
+    }
+    .pic{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+        margin: 10px;
+    }
+    .info{
+        font-size: 20px;
+    }
+}
